@@ -9,6 +9,7 @@ void setup() {
       cellColors[x][y] = false;
     }
   }
+  loadImages();
 }
 
 void draw() {
@@ -18,6 +19,7 @@ void draw() {
   drawScore();
   drawMessage();
   drawButtons();
+  drawCursor();
 }
 
 void mousePressed() {

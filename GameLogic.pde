@@ -42,6 +42,7 @@ void startGame() {
   score = 0;
   blinksRemaining = 10;
   blinkRandomCell();
+  //moleRandomCell();
 }
 
 void pauseGame() {

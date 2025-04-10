@@ -36,3 +36,7 @@ int previousCell = -1;
 float litDuration;
 float blinkInterval;
 boolean[][] cellColors;
+
+// image stuffs
+String hammerImagePath = "hammer.png";
+String moleImagePath = "mole.png";

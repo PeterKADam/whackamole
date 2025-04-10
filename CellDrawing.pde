@@ -19,12 +19,11 @@ void drawCell(int x, int y, int num) {
   }
   rect(posX, posY, cellSize, cellSize);
 
+  fill(0);
   if (cellColors[x][y]) {
-    fill(255);
-  } else {
-    fill(0);
+    image(moleImage, posX + cellSize / 4, posY + cellSize / 4, cellSize / 2, cellSize / 2);
   }
-  textAlign(CENTER, CENTER);
-  textSize(20);
-  text(num, posX + cellSize / 2, posY + cellSize / 2);
+    
+
+
 }
