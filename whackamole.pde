@@ -3,6 +3,7 @@ void settings() {
 }
 
 void setup() {
+  frameRate(60);
   cellColors = new boolean[size][size];
   for (int y = 0; y < size; y++) {
     for (int x = 0; x < size; x++) {
