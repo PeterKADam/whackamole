@@ -20,9 +20,19 @@ void draw() {
   drawMessage();
   drawButtons();
   drawCursor();
+
+  // Update the hammer angle for animation
+  if (hammerAngle > 0) {
+    hammerAngle -= hammerAngleIncrement;
+  } else {
+    hammerAngle = 0;
+  }
 }
 
 void mousePressed() {
   handleCellClick();
   handleButtonClick();
+
+  // Start the hammer animation
+  hammerAngle = PI / 4; // Set the initial angle for the animation
 }

@@ -40,3 +40,7 @@ boolean[][] cellColors;
 // image stuffs
 String hammerImagePath = "hammer.png";
 String moleImagePath = "mole.png";
+
+// angle variable for the hammer animation
+float hammerAngle = 0;
+float hammerAngleIncrement = 0.1; // controls the speed of the animation

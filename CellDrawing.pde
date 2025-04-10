@@ -12,14 +12,10 @@ void drawCell(int x, int y, int num) {
   int posY = y * cellSize;
 
   stroke(0);
-  if (cellColors[x][y]) {
-    fill(0);
-  } else {
-    fill(200);
-  }
+  fill(200);
+
   rect(posX, posY, cellSize, cellSize);
 
-  fill(0);
   if (cellColors[x][y]) {
     image(moleImage, posX + cellSize / 4, posY + cellSize / 4, cellSize / 2, cellSize / 2);
   }
